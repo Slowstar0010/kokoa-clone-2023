@@ -7,36 +7,58 @@
   <title>repl.it</title>
   <style>
     body {
-      background-color: rgba(0, 0, 0, 0.1);
+      background-color: rgba(0 ,0 ,0 ,0.1);
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       flex-wrap: wrap;
-      flex-direction: column;
+      margin: 30px 33%;
+      
     }
 
     header {
-      height: 100px;
-      width: 500px;
-      margin: 10px;
       display: flex;
       align-items: center;
       justify-content: center;
-    }
-
-    .Main_Box {
-      background-color: teal;
-      height: 600px;
-      width: 650px;
-      position: relative;
-    }
-
-    .Main_Box:first-child {
-      background-color: tomato;
-      position: absolute;
       height: 100px;
-      width: 100px;
+      width: 100%;
+      
     }
+
+    div {
+      height: 350px;
+      width: 200px;
+      background-color: teal;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: solid whitesmoke 8px;
+      margin: 10px;
+      flex-direction: column;
+    }
+    body > div {
+      background-color: tomato;
+    }
+    div div {
+      background-color: whitesmoke;
+      width: 200px;
+      height: 50px;
+      position: relative;
+      top: -90px;
+      margin: 0px 2px;
+      align-items: start;
+
+    }
+    div:nth-child(3) {
+      background-color: teal;
+    }
+    div:nth-child(4) {
+      background-color: burlywood;
+    }
+    div:nth-child(5) {
+      background-color: thistle;
+    }
+  
   </style>
 </head>
 
@@ -44,11 +66,21 @@
   <header>
     <h1>The Best Colors</h1>
   </header>
-  <div class="Main_Box">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+  <div class="Tomato_Box">
+    <div class="Tomato_Box_Color"><h2>Tomato</h2></div>
+    <div class="Tomato-Box_code"><h3>#FF6347</h3></div>
+  </div>
+  <div class="Teal_Box">
+    <div class="Teal_Box_Color"><h2>Teal</h2></div>
+    <div class="Teal_Box_Code"><h3>#008080</h3></div>
+  </div>
+  <div class="Burlywood_Box">
+    <div class="Burlywood_Box_Color"><h2>Burlywood</h2></div>
+    <div class="Teal_Box_Code"><h3>#DEB887</h3></div>
+  </div>
+  <div class="Thistle_Box">
+    <div class="Thistle_Box_Color"><h2>Thistle</h2></div>
+    <div class="Thistle_Box_Code"><h3>#D7BFD7</h3></div>
   </div>
 </body>
 
