@@ -4,51 +4,83 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>repl.it</title>
+  <title>You Are Awesome!</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
   <style>
-    body {
-      background-color: rgba(0, 0, 0, 0.1);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      flex-direction: column;
-    }
-
-    header {
-      height: 100px;
-      width: 500px;
-      margin: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
     .Main_Box {
+      height: 400px;
+      width: 200px;
       background-color: teal;
-      height: 600px;
-      width: 650px;
-      position: relative;
     }
 
-    .Main_Box:first-child {
-      background-color: tomato;
-      position: absolute;
+    .Status-Bar {
+      display: flex;
+      justify-content: center;
+      padding: 5px 3px;
+    }
+
+    .Status-Bar__Column {
+      width: 28%;
+    }
+
+    .status-bar__column:first-child span {
+      margin-right: 5px;
+    }
+
+    .status-bar__column:nth-child(2) {
+      display: flex;
+      justify-content: center;
+    }
+
+    .Song-Bar {
+      display: flex;
+      justify-content: center;
+    }
+
+    .Song-Bar__Song-img {
+      display: flex;
+      background-color: yellow;
       height: 100px;
       width: 100px;
+    }
+
+    .Song-Bar__Name {
+      margin: 10px;
+      line-height: 2;
     }
   </style>
 </head>
 
 <body>
-  <header>
-    <h1>The Best Colors</h1>
-  </header>
-  <div class="Main_Box">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+  <div Class="Main_Box">
+    <div class="Status-Bar">
+      <div class="Status-Bar__Column">
+        <span>X</span>
+      </div>
+      <div class="Status-Bar__Column">
+        <span>Playlist</span>
+      </div>
+    </div>
+    <div class="Song-Bar">
+      <div class="Song-Bar__Song-img"></div>
+      <div class="Song-Bar__Name">
+        <p>Random Love</p>
+        <p>by Divay Kapoor</p>
+      </div>
+    </div>
+    <div class="Button-Box">
+      <div class="Button-Box__Play"></div>
+      <div class="Button-Box__Favorite"></div>
+      <div class="Button-Box__Add-list"></div>
+    </div>
+    <ul class="Song-List">
+      <div class="Song-List__1"></div>
+      <div class="Song-List__2"></div>
+      <div class="Song-List__3"></div>
+      <div class="Song-List__4"></div>
+    </ul>
   </div>
 </body>
 
